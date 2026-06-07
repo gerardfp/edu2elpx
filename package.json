@@ -2,8 +2,13 @@
   "name": "edu2elpx-vscode",
   "displayName": "Edumark to eXeLearning",
   "description": "Previsualiza proyectos Edumark en tiempo real y expórtalos a paquetes eXeLearning (.elpx)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "gerardfp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gerardfp/edu2elpx"
+  },
+  "license": "GPL-3.0-or-later",
   "engines": {
     "vscode": "^1.85.0"
   },
