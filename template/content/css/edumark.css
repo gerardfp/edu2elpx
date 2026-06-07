@@ -1,0 +1,125 @@
+/* Edumark custom didactical blocks - Modern and Premium Aesthetics */
+.edumark-block {
+    margin: 2em 0;
+    padding: 1.5em 1.8em;
+    border-radius: 12px;
+    border-left: 6px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edumark-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.edumark-block .block-title {
+    font-weight: 700;
+    font-size: 1.15em;
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.edumark-block .block-content {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #334155;
+}
+
+.edumark-block .block-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Variant styles based on block type */
+.edumark-block.ask_yourself {
+    border-left-color: #d935d1;
+    background: linear-gradient(135deg, #ffffff 0%, #fdf4fd 100%);
+}
+.edumark-block.ask_yourself .block-title {
+    color: #b21bb0;
+}
+
+.edumark-block.warning {
+    border-left-color: #f97316;
+    background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+}
+.edumark-block.warning .block-title {
+    color: #ea580c;
+}
+
+.edumark-block.didyouknow {
+    border-left-color: #8b5cf6;
+    background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
+}
+.edumark-block.didyouknow .block-title {
+    color: #7c3aed;
+}
+
+.edumark-block.hint {
+    border-left-color: #22c55e;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+.edumark-block.hint .block-title {
+    color: #16a34a;
+}
+
+.edumark-block.solution {
+    border-left-color: #a855f7;
+    background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
+}
+.edumark-block.solution .block-title {
+    color: #9333ea;
+}
+
+.edumark-block.reflection {
+    border-left-color: #6366f1;
+    background: linear-gradient(135deg, #ffffff 0%, #eef2ff 100%);
+}
+.edumark-block.reflection .block-title {
+    color: #4f46e5;
+}
+
+.edumark-block.activity {
+    border-left-color: #f43f5e;
+    background: linear-gradient(135deg, #ffffff 0%, #fff1f2 100%);
+}
+.edumark-block.activity .block-title {
+    color: #e11d48;
+}
+
+.edumark-block.note {
+    border-left-color: #64748b;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+.edumark-block.note .block-title {
+    color: #475569;
+}
+
+.edumark-block.question {
+    border-left-color: #14b8a6;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 100%);
+}
+.edumark-block.question .block-title {
+    color: #0d9488;
+}
+
+.edumark-block.rubric {
+    border-left-color: #ec4899;
+    background: linear-gradient(135deg, #ffffff 0%, #fdf2f8 100%);
+}
+.edumark-block.rubric .block-title {
+    color: #db2777;
+}
+
+.edumark-block.generic {
+    border-left-color: #94a3b8;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+.edumark-block.generic .block-title {
+    color: #475569;
+}

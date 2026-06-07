@@ -1,0 +1,66 @@
+{
+  "name": "edu2elpx-vscode",
+  "displayName": "Edumark to eXeLearning",
+  "description": "Previsualiza proyectos Edumark en tiempo real y expórtalos a paquetes eXeLearning (.elpx)",
+  "version": "1.0.0",
+  "publisher": "gerardfp",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "edu2elpx.preview",
+        "title": "Edumark: Previsualizar en eXeLearning",
+        "icon": "$(eye)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "resourceExtname == .edu",
+          "command": "edu2elpx.preview",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "resourceExtname == .edu",
+          "command": "edu2elpx.preview",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .edu",
+          "command": "edu2elpx.preview",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "extensionDependencies": [
+    "gerardfp.edumark-vscode"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "npx esbuild ./src/extension.ts --bundle --platform=node --target=node18 --external:vscode --outfile=./dist/extension.js",
+    "watch": "npx esbuild ./src/extension.ts --bundle --platform=node --target=node18 --external:vscode --outfile=./dist/extension.js --watch"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "marked": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.19.11"
+  }
+}

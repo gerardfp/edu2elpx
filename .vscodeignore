@@ -1,0 +1,10 @@
+.vscode/**
+.git/**
+node_modules/**
+src/**
+tsconfig.json
+.vscodeignore
+webpack.config.js
+esbuild.js
+README.md
+old_doc2elpx/**
